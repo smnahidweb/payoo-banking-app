@@ -26,6 +26,8 @@ document.getElementById("cashout-box").addEventListener('click',function(){
     handleToggle("addmoney","none");
     handleToggle("transection-history","none");
     handleToggle("payBil-section","none");
+    handleToggle("Transfer-section","none");
+    
     
 
 })
