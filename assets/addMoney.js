@@ -12,13 +12,15 @@ document.getElementById("add-money").addEventListener("click",function(event){
   const sum = mainBalance + amount;
 //   document.getElementById("main-balance").innerText = sum;
      setInnerText("main-balance",sum);
-const transactionContainer = document.getElementById("Transaction-section");
-    const p = document.createElement("p");
-    p.innerText=`
-     added ${amount} from ${accountNumber} account
-    `
-    transactionContainer.appendChild(p);
+const transactionContainer = document.getElementById("transaction-container");
+    const div = document.createElement("div");
+   
+    div.innerHTML = `
+    
+    <h2> Added Amount : ${amount } from this ${accountNumber};
 
+    `
+    transactionContainer.appendChild(div)
   }
 
    }
